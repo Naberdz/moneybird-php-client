@@ -177,7 +177,14 @@ class Moneybird
     {
         return new GeneralJournalDocumentEntry($this->connection, $attributes);
     }
-
+    /**
+     * sets connection
+     * @param \Picqer\Financials\Moneybird\Connection $connection
+     */
+    public function setConnection(Connection $connection)
+    {
+        $this->connection = $connection;
+    }
     /**
      * @return \Picqer\Financials\Moneybird\Connection
      */
